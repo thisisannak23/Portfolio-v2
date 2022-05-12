@@ -4,6 +4,10 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+body {
+  margin: 25px;
+}
+
 h1,
 h2,
 h3 {
@@ -26,7 +30,6 @@ h3 {
 
 p {
   background: var(--secondary-color);
-  padding: 20px;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
@@ -55,14 +58,6 @@ p {
 .bg-primary-color {
   background-color: #6c63ff !important;
   color: white !important;
-}
-
-.aboutProjects {
-  max-width: 300px !important;
-}
-
-.img {
-  max-width: 500px;
 }
 
 .navigation-links {
@@ -117,6 +112,15 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width:576px){
-  .weatherPic: d-none;
+@media (max-width: 800px) {
+  .weatherPic,
+  .yogaPic,
+  .yogurtPic {
+    display: none !important;
+  }
+  .weatherDescrip,
+  .yogaDescrip,
+  .yogurtDescrip {
+    text-align: center;
+  }
 }
